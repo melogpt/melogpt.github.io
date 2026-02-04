@@ -145,6 +145,16 @@ img {
     text-align: center;
 }
 
+.skill-icon {
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 5px;
+    margin-bottom: 8px;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
 .contact {
     background-color: rgb(247, 245, 245);
     text-align: center;
