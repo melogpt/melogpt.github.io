@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BirdLens (Bird Identifier)</title>
+    <meta name="description" content="Privacy Policy and AI Health Disclaimer for BirdLens: Bird Identifier & Avian Health Diagnosis.">
+    <style>
+        :root {
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --text-muted: #6b7280;
+            --border-color: #e5e7eb;
+            --accent-color: #2563eb;
+            --warning-bg: #fffbeb;
+            --warning-border: #fcd34d;
+            --warning-text: #92400e;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0f172a;
+                --card-bg: #1e293b;
+                --text-primary: #f8fafc;
+                --text-secondary: #cbd5e1;
+                --text-muted: #94a3b8;
+                --border-color: #334155;
+                --accent-color: #60a5fa;
+                --warning-bg: #291e0a;
+                --warning-border: #b45309;
+                --warning-text: #fde68a;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .app-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Disclaimer Box */
+        .disclaimer-box {
+            background-color: var(--warning-bg);
+            border: 1px solid var(--warning-border);
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-bottom: 32px;
+        }
+
+        .disclaimer-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--warning-text);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .disclaimer-text {
+            font-size: 13.5px;
+            color: var(--warning-text);
+            line-height: 1.6;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        p {
+            font-size: 14.5px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            line-height: 1.65;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 12px;
+        }
+
+        li {
+            font-size: 14.5px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+            padding-left: 18px;
+            position: relative;
+            line-height: 1.65;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 4px;
+            color: var(--text-muted);
+            font-weight: bold;
+        }
+
+        li strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            word-break: break-all;
+        }
+
+        a:hover {
+            opacity: 0.85;
+        }
+
+        .contact-box {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 12px;
+        }
+
+        .contact-box p {
+            margin-bottom: 6px;
+        }
+
+        footer {
+            margin-top: 36px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 16px 12px;
+            }
+
+            .container {
+                padding: 24px 18px;
+                border-radius: 8px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 17px;
+            }
+
+            p, li {
+                font-size: 14px;
+            }
+        }
+
+        @media print {
+            body {
+                background: none;
+                color: #000;
+                padding: 0;
+            }
+
+            .container {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="app-title">BirdLens: Bird Identifier &amp; Avian Health Diagnosis</div>
+            <div class="last-updated">Last Updated: September 30, 2026</div>
+        </header>
+
+        <!-- AI & Health Disclaimer -->
+        <div class="disclaimer-box">
+            <div class="disclaimer-title">
+                ⚠️ Important AI &amp; Avian Health Disclaimer
+            </div>
+            <div class="disclaimer-text">
+                Bird identification and avian health diagnosis in BirdLens are powered by Artificial Intelligence (AI) and automated computer vision algorithms. AI models may produce incorrect, incomplete, or inaccurate results. BirdLens does NOT provide veterinary medical care, professional clinical diagnosis, or prescriptive treatment. We accept zero liability for scan results or actions taken based on them. This app is for informational, educational, and recreational purposes only.
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <section>
+            <h2>1. Overview &amp; Acceptance</h2>
+            <p>
+                Welcome to BirdLens (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;the App&rdquo;). By accessing, downloading, or using BirdLens—including our Bird Identifier and Bird Diagnose features—you expressly agree to the terms outlined in this Privacy Policy and the applicable Terms of Use. If you do not agree with any part of this policy, please do not use the application.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section>
+            <h2>2. AI Identification &amp; Health Diagnosis Disclaimers</h2>
+            <ul>
+                <li>
+                    <strong>AI-Generated Estimations:</strong> BirdLens analyzes photos using automated machine learning models. Species classification, health condition assessments, observed symptom indicators, and care recommendations are algorithmic estimations generated from visual data.
+                </li>
+                <li>
+                    <strong>Superficial Visual Screening Only:</strong> The Bird Diagnose tool provides only preliminary visual symptom screening. It cannot perform blood chemistry, bacterial/viral testing, microscopic fecal analysis, radiographs, or internal physical examinations.
+                </li>
+                <li>
+                    <strong>No Warranty of Accuracy:</strong> We make no representations or warranties regarding the accuracy, completeness, or reliability of any identification or health evaluation. The App may fail to detect serious, fatal, or contagious avian diseases, or conversely flag normal physiological behaviors (such as seasonal molting or preening) as illnesses.
+                </li>
+                <li>
+                    <strong>Absolute Zero Liability:</strong> The developers, owners, and operators of BirdLens expressly disclaim any and all liability or responsibility for any direct, indirect, incidental, consequential, special, or punitive damages, animal injury, illness, mortality, loss, or veterinary costs arising from your use of the App or reliance on identification and diagnosis results.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 3 -->
+        <section>
+            <h2>3. Veterinary Medical &amp; Wildlife Disclaimer</h2>
+            <ul>
+                <li>
+                    <strong>No Veterinary-Client Relationship:</strong> Use of the Bird Diagnose or Bird Identifier feature does NOT establish a veterinary-client-patient relationship between you and BirdLens or any of its contributors.
+                </li>
+                <li>
+                    <strong>Mandatory Professional Veterinary Consultation:</strong> If your pet bird displays any signs of illness, lethargy, fluffed feathers, bleeding, breathing abnormalities, nasal discharge, or behavioral changes, seek immediate examination by a licensed, certified avian veterinarian. Never delay, alter, or disregard professional veterinary medical advice or prescription medication based on BirdLens.
+                </li>
+                <li>
+                    <strong>Wildlife Safety:</strong> Never attempt to capture, touch, medicate, or handle wild birds or disturb nests. For injured wild birds, always contact a local licensed wildlife rehabilitation center.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section>
+            <h2>4. Information We Process</h2>
+            <ul>
+                <li>
+                    <strong>Photographs &amp; Diagnosis Images:</strong> When you select or capture a photo for species identification or health diagnosis, the image is transmitted securely over an encrypted connection (HTTPS/TLS) solely to identify the bird and screen visual symptoms. Photos are never used for facial recognition, sold to third parties, or used for advertising.
+                </li>
+                <li>
+                    <strong>On-Device Local Storage:</strong> Your scan and diagnosis history, saved photos, and user preferences are stored locally on your device via SwiftData and UserDefaults. You retain complete control to delete any scan or clear your full history at any time.
+                </li>
+                <li>
+                    <strong>Anonymous Diagnostics:</strong> We may collect non-personally identifiable performance and crash diagnostics via standard Apple APIs to ensure system reliability.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section 5 -->
+        <section>
+            <h2>5. In-App Purchases &amp; Payments</h2>
+            <p>
+                All subscription transactions and billing are handled exclusively by Apple Inc. through StoreKit and the App Store. BirdLens does not store, view, or process your credit card, debit card, or financial billing information. Subscriptions are subject to Apple&apos;s standard terms and privacy policies.
+            </p>
+        </section>
+
+        <!-- Section 6 -->
+        <section>
+            <h2>6. Third-Party AI &amp; Vision Services</h2>
+            <p>
+                To provide state-of-the-art image recognition and visual symptom evaluation, the App transmits image data to enterprise-grade AI cloud processing providers under strict confidentiality and encryption protocols. Image data is processed ephemerally without being linked to personal user identities.
+            </p>
+        </section>
+
+        <!-- Section 7 -->
+        <section>
+            <h2>7. Children&apos;s Privacy</h2>
+            <p>
+                BirdLens does not knowingly collect, solicit, or maintain personal information from children under 13 years of age. If you believe we have inadvertently gathered any data from a minor, please contact us immediately so we can remove it.
+            </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section>
+            <h2>8. Terms of Service &amp; EULA</h2>
+            <p>
+                Use of BirdLens is governed by Apple&apos;s Standard End User License Agreement (EULA) and BirdLens Terms of Use. You can review Apple&apos;s standard terms at:
+            </p>
+            <p>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+            </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section>
+            <h2>9. Policy Changes &amp; Support Contact</h2>
+            <p>
+                We reserve the right to update this Privacy Policy at any time. Material changes will be indicated by the &ldquo;Last Updated&rdquo; date at the top of this policy.
+            </p>
+            <p>
+                For any questions, data privacy inquiries, or support requests, please contact us directly:
+            </p>
+            <div class="contact-box">
+                <p><strong>Support Email:</strong> <a href="mailto:melikedilekdemir@gmail.com">melikedilekdemir@gmail.com</a></p>
+                <p><strong>Developer:</strong> Melike Demir</p>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 BirdLens / Melike Demir. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
