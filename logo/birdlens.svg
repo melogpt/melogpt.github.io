@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="blBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="lensRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <!-- Squircle Base -->
+  <rect width="120" height="120" rx="27" fill="url(#blBg)"/>
+  
+  <!-- Optical Lens Ring -->
+  <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+  <circle cx="60" cy="60" r="30" fill="none" stroke="url(#lensRing)" stroke-width="2.5"/>
+  
+  <!-- Bird Silhouette in Flight -->
+  <path d="M42 66 C48 52 64 54 78 44 C72 56 64 63 60 74 C56 70 50 69 42 66 Z" fill="white"/>
+  <path d="M56 58 C62 50 72 49 84 46 C79 53 73 57 66 61 Z" fill="#67e8f9" opacity="0.9"/>
+  
+  <!-- AI focus dot -->
+  <circle cx="86" cy="42" r="3.5" fill="#facc15"/>
+</svg>

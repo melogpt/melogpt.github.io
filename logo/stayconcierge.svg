@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="scBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="scGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+  </defs>
+  <!-- Squircle Base -->
+  <rect width="120" height="120" rx="27" fill="url(#scBg)"/>
+  
+  <!-- Modern Hotel Concierge Dome / Key & QR Accent -->
+  <path d="M36 68 C36 48 84 48 84 68 Z" fill="white" opacity="0.95"/>
+  <rect x="30" y="70" width="60" height="6" rx="3" fill="url(#scGold)"/>
+  <circle cx="60" cy="42" r="5" fill="url(#scGold)"/>
+  <line x1="60" y1="42" x2="60" y2="48" stroke="url(#scGold)" stroke-width="3"/>
+
+  <!-- QR Scan Frame Accent -->
+  <path d="M42 86 L36 86 L36 80" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M78 86 L84 86 L84 80" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <rect x="44" y="81" width="32" height="4" rx="2" fill="url(#scGold)"/>
+</svg>

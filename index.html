@@ -1,139 +1,754 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melike Demir | Software Engineer</title>
-    <link rel="stylesheet" href="meyo.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Melike Demir - Software Engineer</title>
+    <meta name="description" content="Portfolio of Melike Demir, Software Engineer specializing in iOS (SwiftUI), Full-Stack (React, Supabase), and Computer Vision & QA Automation (Python, YOLO, TUSAŞ LIFT UP).">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="#" class="name">MELİKE DEMİR</a>
-            <div class="menu">
-                <ul class="list">
-                    <li><a href="melike-demir-cv.pdf" target="_blank">Resume</a></li>
-                    <li><a href="https://www.linkedin.com/in/melike-demir-331827285/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">MD<span class="logo-dot">.</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#apps" class="nav-link nav-link-highlight">Projects
+                    <svg class="nav-underline-svg" width="48" height="8" viewBox="0 0 48 8" fill="none"><path d="M2 5.5C10 2.5 18 3 24 4.5C30 6 38 6 46 3" stroke="#007aff" stroke-width="2.5" stroke-linecap="round"/></svg>
+                </a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="melike-demir-cv.pdf" class="nav-cta" download="Melike_Demir_CV.pdf">Download CV</a>
             </div>
-        </nav>
-    </header>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="anaboard">
-            <div class="text">
-                <p class="helo">HELLO</p>
-                <h1 class="title">I'm <span>Melike DEMİR</span></h1>
-                <h2 class="subtitle">Software Engineer</h2>
-                <p class="paraf">Welcome to my portfolio! I am a recent Software Engineering graduate with a strong interest
-                    in software development and project management. I enjoy building efficient, user-focused solutions while
-                    also considering planning, coordination, and process improvement. With experience in web and mobile
-                    projects, I aim to combine my technical background with analytical thinking to contribute to
-                    well-structured and successful software projects.
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for opportunities</span>
+                </div>
+                <h1 class="hero-title">
+                    Software Engineer<br>
+                    <span class="hero-highlight">building intelligent systems<br>from zero to production.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Software Engineering graduate from Çankaya University with hands-on experience across high-performance web applications, native iOS architectures, and computer vision / automated testing pipelines in aerospace R&D with TUSAŞ.
                 </p>
-                <div class="buton">
-                    <a class="btn primary-btn" href="https://github.com/melogpt" target="_blank" rel="noopener noreferrer">Hire Me</a>
-                    <a class="btn secondary-btn" href="https://www.linkedin.com/in/melike-demir-331827285/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Core Systems</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Engineering Internships</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">TUSAŞ</span>
+                        <span class="stat-label">LIFT UP Researcher</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">B.Sc.</span>
+                        <span class="stat-label">Software Engineering</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#apps" class="btn-primary">View Featured Projects</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
                 </div>
             </div>
-            <div class="foto">
-                <div class="foto-frame">
-                    <img src="foto/Ekran Resmi 2026-02-04 17.24.17.jpg" alt="Melike Demir">
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <img src="foto/melikedemir.png" alt="Melike Demir" class="profile-image">
+                </div>
+                <div class="hero-floating-card card-1">
+                    <span class="floating-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 21.99 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 21.99C7.79 22.03 6.8 20.68 5.96 19.47C4.25 16.99 2.97 12.5 4.7 9.5C5.55 8.01 7.13 7.08 8.82 7.06C10.09 7.04 11.29 7.93 12.05 7.93C12.81 7.93 14.26 6.86 15.79 7.03C16.4 7.06 18.18 7.29 19.32 8.97C19.22 9.03 17.01 10.34 17.04 13.03C17.07 16.23 19.83 17.27 19.87 17.28C19.84 17.36 19.4 18.85 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z" fill="#5ac8fa"/></svg>
+                    </span>
+                    <span class="floating-text">iOS & SwiftUI</span>
+                </div>
+                <div class="hero-floating-card card-2">
+                    <span class="floating-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#34c759" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="#34c759"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="#34c759" stroke-width="2"/></svg>
+                    </span>
+                    <span class="floating-text">YOLO & Computer Vision</span>
+                </div>
+                <div class="hero-floating-card card-3">
+                    <span class="floating-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" stroke="#af52de" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="floating-text">React & Full-Stack</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section class="skills">
-            <h2 class="section-title">SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class='bx bxl-html5'></i>
-                    <span class="skill-name">HTML5</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-css3'></i>
-                    <span class="skill-name">CSS3</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-javascript'></i>
-                    <span class="skill-name">JavaScript</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-python'></i>
-                    <span class="skill-name">Python</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-c-plus-plus'></i>
-                    <span class="skill-name">C++</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-java'></i>
-                    <span class="skill-name">Java</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-react'></i>
-                    <span class="skill-name">React</span>
-                </div>
-                <div class="skill-card">
-                    <img src="foto/swift_ikon.png" alt="Swift" class="skill-icon">
-                    <span class="skill-name">Swift</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bx-data'></i>
-                    <span class="skill-name">SQL / Data</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-mongodb'></i>
-                    <span class="skill-name">MongoDB</span>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I am a versatile and results-driven Software Engineering graduate from Çankaya University with strong hands-on experience in full-lifecycle software development, distributed architectures, and scalable systems. My track record spans high-performance web applications (React 19, TypeScript, Supabase), native mobile solutions (iOS, Swift, SwiftUI), and automated test suites (Python, Pytest, YOLO, OpenCV).
+                    </p>
+                    <p class="about-description">
+                        A major pillar of my engineering work is active aerospace research conducted in formal partnership with the TUSAŞ LIFT UP defense research program. Collaborating directly with flight test and software verification engineers, I engineered automated end-to-end verification platforms for Helicopter Cockpit Display Units (HDU) using computer vision, YOLO object detection, and automated OCR pipelines.
+                    </p>
+                    <p class="about-description">
+                        Across my professional internships at Mastersoft (developing real-time ML-driven telemetry visualization platforms) and Simtek Simulation Technologies (engineering deterministic C++17 simulation transaction engines with the Command Pattern), I have consistently championed clean code, modular software design, CI/CD automation, and modern development workflows. Whether building full-stack SaaS portals or native iOS apps with StoreKit 2 and CoreML, I focus on delivering robust, user-centric software that scales.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2 class="contact-title">Contact Me</h2>
-            <div class="container">
-                <a href="mailto:melikedilekdemir@gmail.com" class="contact-item posta">
-                    <div class="contact-icon"><i class='bx bxl-gmail'></i></div>
-                    <div class="contact-detail">
-                        <span class="contact-type">Email</span>
-                        <span class="contact-text">melikedilekdemir@gmail.com</span>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <span class="section-subtitle" style="text-align: center;">Career History</span>
+            <h2 class="section-title" style="margin-bottom: 40px;">Professional Experience</h2>
+            <div class="experience-grid">
+
+                <!-- 1. Mastersoft -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-role-group">
+                            <h3>Software Engineering Intern</h3>
+                            <div class="exp-company">
+                                <span>Mastersoft</span>
+                                <span class="exp-location">• Hacettepe Teknokent, Ankara, Turkey</span>
+                            </div>
+                        </div>
+                        <span class="exp-date-badge">Jul 2025 – Aug 2025</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Contributed to the LogAI telemetry platform, developing real-time frontend visualization modules and analytical dashboards for machine learning-driven log anomaly detection pipelines.</li>
+                        <li>Integrated ElasticSearch distributed query endpoints with asynchronous data fetching patterns, optimizing high-volume search latency and large-scale log aggregation display.</li>
+                        <li>Architected reusable, type-safe UI component libraries in React and TypeScript, ensuring strict accessibility, responsive state synchronization, and modular code maintainability.</li>
+                        <li>Participated in bi-weekly Agile/Scrum sprints, contributing to code reviews, API integration testing, and collaborative Git branching workflows.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="exp-tag">React</span>
+                        <span class="exp-tag">TypeScript</span>
+                        <span class="exp-tag">ElasticSearch</span>
+                        <span class="exp-tag">RESTful APIs</span>
+                        <span class="exp-tag">State Management</span>
+                        <span class="exp-tag">Git</span>
+                        <span class="exp-tag">Agile/Scrum</span>
+                    </div>
+                </div>
+
+                <!-- 2. Simtek Simulation Technologies -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <div class="exp-role-group">
+                            <h3>Software Engineering Intern</h3>
+                            <div class="exp-company">
+                                <span>Simtek Simulation Technologies</span>
+                                <span class="exp-location">• Ankara, Turkey</span>
+                            </div>
+                        </div>
+                        <span class="exp-date-badge">Jul 2024 – Aug 2024</span>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Developed core system modules for simulation software tools utilizing modern C++ (OOP, STL, RAII), emphasizing deterministic execution and low-latency state updates.</li>
+                        <li>Architected and implemented a reversible transaction engine using the Command Design Pattern, enabling multi-level undo/redo operations and state serialization across simulation sessions.</li>
+                        <li>Engineered grid-based simulation data structures and event-driven logic for internal engineering validation suites, enforcing strict memory profiling and leak prevention.</li>
+                        <li>Applied collaborative Git workflows, modular architecture principles, and algorithmic optimizations within a professional simulation engineering environment.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="exp-tag">C++17</span>
+                        <span class="exp-tag">STL</span>
+                        <span class="exp-tag">Object-Oriented Design (OOP)</span>
+                        <span class="exp-tag">Command Pattern</span>
+                        <span class="exp-tag">Memory Profiling</span>
+                        <span class="exp-tag">Linux</span>
+                        <span class="exp-tag">Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-dark">
+        <div class="container">
+            <h2 class="section-title-dark">Tech Stack</h2>
+            <div class="skills-categories-dark">
+                
+                <div class="skill-cat-dark">
+                    <h3 class="cat-title-dark">Mobile Development</h3>
+                    <div class="cat-tags-dark">
+                        <span>SwiftUI</span><span>iOS 18+ SDK</span><span>StoreKit 2 (Subscriptions & IAP)</span><span>MVVM</span><span>Swift Concurrency (async/await)</span><span>Vision Framework</span><span>AVFoundation</span><span>WatchKit</span><span>UserNotifications</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-dark">
+                    <h3 class="cat-title-dark">Web & Full-Stack</h3>
+                    <div class="cat-tags-dark">
+                        <span>React 19</span><span>TanStack (Router, Query, Start)</span><span>Supabase (PostgreSQL, Realtime, RLS)</span><span>Node.js</span><span>Tailwind CSS</span><span>REST APIs</span><span>Zustand</span><span>Zod</span><span>Vite</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-dark">
+                    <h3 class="cat-title-dark">AI & Computer Vision</h3>
+                    <div class="cat-tags-dark">
+                        <span>YOLO (Ultralytics)</span><span>OpenCV</span><span>Tesseract OCR</span><span>LLM Prompt Engineering</span><span>Multimodal AI</span><span>CoreML</span><span>OpenAI API</span><span>Gemini API</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-dark">
+                    <h3 class="cat-title-dark">Testing & Automation</h3>
+                    <div class="cat-tags-dark">
+                        <span>Pytest</span><span>Pytest-qt</span><span>PyQt5</span><span>ReportLab (PDF Test Reports)</span><span>Git</span><span>GitHub CI/CD</span><span>Xcode</span><span>Cursor IDE</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-dark">
+                    <h3 class="cat-title-dark">Languages</h3>
+                    <div class="cat-tags-dark">
+                        <span>Swift</span><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>C++17</span><span>C</span><span>Java</span><span>SQL</span><span>HTML5</span><span>CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-dark">
+                    <h3 class="cat-title-dark">Analysis & Methodology</h3>
+                    <div class="cat-tags-dark">
+                        <span>Agile & Scrum</span><span>Process Modeling (UML, BPMN)</span><span>SRS / SDD Preparation</span><span>Requirements Engineering</span><span>WBS</span><span>User Stories</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps / Featured Projects Section -->
+    <section id="apps" class="apps">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="apps-showcase-container">
+
+                <!-- 1. Helicopter Display Unit (HDU) Test Automation -->
+                <div class="app-showcase-item">
+                    <div class="app-info-content">
+                        <div class="app-icon-new">
+                            <img src="logo/tusas-hdu.svg" alt="HDU Test Automation Logo">
+                        </div>
+                        <h3 class="app-title-new">Helicopter Display Unit (HDU) Test Automation</h3>
+                        <p class="app-subtitle-new">Aerospace Cockpit Avionics QA • TUSAŞ LIFT UP</p>
+                        <p class="app-description-new">
+                            An automated end-to-end verification platform for Helicopter Cockpit Display Units (HDU) and Warning/Caution/Advisory (WCA) interfaces, developed in formal partnership with Turkish Aerospace Industries (TUSAŞ).
+                        </p>
+                        <ul class="app-bullets-new">
+                            <li>Trained & deployed YOLO object detection and OpenCV/OCR pipelines to automatically validate avionics indicators, gauge numerical values, and alert thresholds from screen captures.</li>
+                            <li>Engineered Pytest & PyQt5 automated test runner with automated ReportLab PDF test report generation, visual discrepancy metrics, and audit logs.</li>
+                            <li>Implemented speech recognition and audio synthesis modules (SpeechRecognition, pyttsx3) for hands-free voice-commanded cockpit test scenario execution.</li>
+                        </ul>
+                        <div class="app-tags-new">
+                            <span class="tag-new">Python</span>
+                            <span class="tag-new">Pytest-qt</span>
+                            <span class="tag-new">YOLO (Ultralytics)</span>
+                            <span class="tag-new">OpenCV</span>
+                            <span class="tag-new">Tesseract OCR</span>
+                            <span class="tag-new">PyQt5</span>
+                            <span class="tag-new">ReportLab</span>
+                            <span class="tag-new">Speech-to-Text</span>
+                        </div>
+                        <div class="app-actions">
+                            <a href="https://github.com/melogpt" class="app-store-btn-new" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>TUSAŞ LIFT UP Project</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Cockpit QA Terminal Mockup -->
+                    <div class="app-preview-container">
+                        <div class="preview-topbar">
+                            <div class="preview-dots">
+                                <span class="preview-dot dot-red"></span>
+                                <span class="preview-dot dot-yellow"></span>
+                                <span class="preview-dot dot-green"></span>
+                            </div>
+                            <span class="preview-title">HDU_VERIFICATION_SUITE v2.4</span>
+                            <span class="preview-status">TESTS PASSING</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="metric-grid">
+                                <div class="metric-card">
+                                    <div class="metric-card-title">YOLO DETECTION ACCURACY</div>
+                                    <div class="metric-card-val accent-cyan">99.4% IoU</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">AVIONICS OCR LATENCY</div>
+                                    <div class="metric-card-val accent-green">14.2 ms</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">AUDIT SUITE PASS RATE</div>
+                                    <div class="metric-card-val accent-purple">128 / 128 PASSED</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">PDF TEST REPORT</div>
+                                    <div class="metric-card-val accent-orange">ReportLab Ready</div>
+                                </div>
+                            </div>
+                            <div class="preview-log">
+                                <div><span class="log-pass">[SUCCESS]</span> WCA Gauge Indicator detected: RPM 102% (nominal)</div>
+                                <div><span class="log-info">[VISION]</span> YOLO bounding box: [x: 420, y: 180, conf: 0.99]</div>
+                                <div><span class="log-accent">[AUDIO]</span> Voice Command: "Execute Scenario Alpha-3" -> OK</div>
+                                <div><span class="log-pass">[PYTEST]</span> All 42 functional checks verified against SRS specs.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. StayConcierge -->
+                <div class="app-showcase-item">
+                    <div class="app-info-content">
+                        <div class="app-icon-new">
+                            <img src="logo/stayconcierge.svg" alt="StayConcierge Logo">
+                        </div>
+                        <h3 class="app-title-new">StayConcierge</h3>
+                        <p class="app-subtitle-new">Hotel Reservation & QR Housekeeping PMS • Full-Stack B2B SaaS</p>
+                        <p class="app-description-new">
+                            A production-grade B2B SaaS platform featuring dual portals: an administrative front-desk Property Management System (PMS) and a mobile-optimized staff web application.
+                        </p>
+                        <ul class="app-bullets-new">
+                            <li>Physical QR code room verification workflow using device camera streams (html5-qrcode) to log room turnarounds with photo proof.</li>
+                            <li>Configured Supabase backend with PostgreSQL migrations, Row-Level Security (RLS), and Realtime WebSocket listeners syncing room statuses with zero latency.</li>
+                            <li>Interactive room occupancy and staff analytics built with Recharts, Zustand state management, and strict Zod validation schemas.</li>
+                        </ul>
+                        <div class="app-tags-new">
+                            <span class="tag-new">React 19</span>
+                            <span class="tag-new">TypeScript</span>
+                            <span class="tag-new">TanStack Router/Query</span>
+                            <span class="tag-new">Supabase (PostgreSQL, Realtime, RLS)</span>
+                            <span class="tag-new">Tailwind CSS</span>
+                            <span class="tag-new">html5-qrcode</span>
+                            <span class="tag-new">Recharts</span>
+                            <span class="tag-new">Zustand</span>
+                            <span class="tag-new">Zod</span>
+                        </div>
+                        <div class="app-actions">
+                            <a href="https://github.com/melogpt" class="app-store-btn-new" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- PMS Dashboard Live Preview Mockup -->
+                    <div class="app-preview-container">
+                        <div class="preview-topbar">
+                            <div class="preview-dots">
+                                <span class="preview-dot dot-red"></span>
+                                <span class="preview-dot dot-yellow"></span>
+                                <span class="preview-dot dot-green"></span>
+                            </div>
+                            <span class="preview-title">STAYCONCIERGE • FRONT-DESK PMS</span>
+                            <span class="preview-status">WEBSOCKET LIVE</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="metric-grid">
+                                <div class="metric-card">
+                                    <div class="metric-card-title">OCCUPANCY RATE</div>
+                                    <div class="metric-card-val accent-green">94.8%</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">CLEANED ROOMS (QR PROOF)</div>
+                                    <div class="metric-card-val accent-cyan">48 / 52 Rooms</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">SUPABASE RLS & REALTIME</div>
+                                    <div class="metric-card-val accent-purple">0ms Sync Delay</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">STAFF TURNAROUND AVG</div>
+                                    <div class="metric-card-val accent-orange">18 mins</div>
+                                </div>
+                            </div>
+                            <div class="preview-log">
+                                <div><span class="log-pass">[QR VERIFIED]</span> Room 304 turnaround submitted by Staff #08 with photo.</div>
+                                <div><span class="log-info">[REALTIME]</span> Supabase broadcast: Room 304 status -> READY FOR CHECK-IN</div>
+                                <div><span class="log-accent">[ANALYTICS]</span> Recharts updated: Occupancy revenue trajectory +12% MoM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. SkinCare AI -->
+                <div class="app-showcase-item">
+                    <div class="app-info-content">
+                        <div class="app-icon-new">
+                            <img src="logo/skincare-ai.svg" alt="SkinCare AI Logo">
+                        </div>
+                        <h3 class="app-title-new">SkinCare AI</h3>
+                        <p class="app-subtitle-new">Personalized Dermatological Routine & Scanner • iOS 18+</p>
+                        <p class="app-description-new">
+                            A production-ready iOS 18+ personalized skincare assistant architected with SwiftUI and MVVM, utilizing Swift Concurrency (async/await) for fast, responsive ingredient analysis.
+                        </p>
+                        <ul class="app-bullets-new">
+                            <li>Engineered an on-device OCR and product label scanner using Apple Vision and AVFoundation to extract cosmetic formulations in real time.</li>
+                            <li>Designed a multi-layered Derma Blueprint prompt engineering architecture that injects user skin profiles into LLM context to evaluate chemical conflicts (e.g., Retinol vs. AHA/BHA) and generate safety assessments.</li>
+                            <li>Constructed an FDA/EMA-aligned medical disclaimer onboarding gate alongside a zero-latency native iOS launch screen and interactive routine tracking.</li>
+                        </ul>
+                        <div class="app-tags-new">
+                            <span class="tag-new">Swift</span>
+                            <span class="tag-new">SwiftUI</span>
+                            <span class="tag-new">iOS 18+</span>
+                            <span class="tag-new">Vision AI</span>
+                            <span class="tag-new">AVFoundation</span>
+                            <span class="tag-new">Prompt Engineering</span>
+                            <span class="tag-new">OpenAI/Gemini API</span>
+                            <span class="tag-new">Swift Concurrency</span>
+                            <span class="tag-new">MVVM</span>
+                        </div>
+                        <div class="app-actions">
+                            <a href="https://github.com/melogpt" class="app-store-btn-new" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- SkinCare iOS Mockup Preview -->
+                    <div class="app-preview-container">
+                        <div class="preview-topbar">
+                            <div class="preview-dots">
+                                <span class="preview-dot dot-red"></span>
+                                <span class="preview-dot dot-yellow"></span>
+                                <span class="preview-dot dot-green"></span>
+                            </div>
+                            <span class="preview-title">DERMA_BLUEPRINT_ENGINE</span>
+                            <span class="preview-status">VISION OCR ACTIVE</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="metric-grid">
+                                <div class="metric-card">
+                                    <div class="metric-card-title">INGREDIENTS EXTRACTED</div>
+                                    <div class="metric-card-val accent-cyan">24 Compounds</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">SKIN PROFILE MATCH</div>
+                                    <div class="metric-card-val accent-green">98.5% Safe</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">CONFLICT DETECTION</div>
+                                    <div class="metric-card-val accent-orange">Retinol vs AHA Filtered</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">REGULATORY GATE</div>
+                                    <div class="metric-card-val accent-purple">FDA / EMA Aligned</div>
+                                </div>
+                            </div>
+                            <div class="preview-log">
+                                <div><span class="log-pass">[VISION AI]</span> Label scanned via AVFoundation camera feed in 180ms.</div>
+                                <div><span class="log-warn">[SAFETY ALERT]</span> Separated Night Retinol from Morning Vitamin C routine.</div>
+                                <div><span class="log-info">[LLM BLUEPRINT]</span> Personalized regimen generated based on sensitive skin profile.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. BirdLens -->
+                <div class="app-showcase-item">
+                    <div class="app-info-content">
+                        <div class="app-icon-new">
+                            <img src="logo/birdlens.svg" alt="BirdLens Logo">
+                        </div>
+                        <h3 class="app-title-new">BirdLens</h3>
+                        <p class="app-subtitle-new">AI Bird Identification & Diagnosis • Native iOS & CoreML</p>
+                        <p class="app-description-new">
+                            A commercial-grade iOS application for instant bird species identification and multimodal symptom-based avian disease diagnosis, built for wildlife observers and pet owners.
+                        </p>
+                        <ul class="app-bullets-new">
+                            <li>Integrated native Apple StoreKit 2 in-app purchase infrastructure supporting Weekly, Annual, and Lifetime subscriptions with custom paywall comparison UI, transaction verification, and freemium quotas.</li>
+                            <li>Implemented diagnostic workflows supporting combined image and text symptom queries, incorporating on-device classification fallbacks for offline reliability.</li>
+                            <li>Designed with comprehensive privacy compliance and responsible avian medical disclaimers.</li>
+                        </ul>
+                        <div class="app-tags-new">
+                            <span class="tag-new">Swift</span>
+                            <span class="tag-new">SwiftUI</span>
+                            <span class="tag-new">StoreKit 2</span>
+                            <span class="tag-new">OpenAI API</span>
+                            <span class="tag-new">Vision / CoreML</span>
+                            <span class="tag-new">MVVM</span>
+                            <span class="tag-new">App Store Production</span>
+                        </div>
+                        <div class="app-actions">
+                            <a href="bird-identifier-privacy.html" class="app-store-btn-new">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <span>Privacy & Disclaimer</span>
+                            </a>
+                            <a href="https://github.com/melogpt" class="app-secondary-btn" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- BirdLens Diagnostic Preview Mockup -->
+                    <div class="app-preview-container">
+                        <div class="preview-topbar">
+                            <div class="preview-dots">
+                                <span class="preview-dot dot-red"></span>
+                                <span class="preview-dot dot-yellow"></span>
+                                <span class="preview-dot dot-green"></span>
+                            </div>
+                            <span class="preview-title">BIRDLENS • COREML CLASSIFIER</span>
+                            <span class="preview-status">STOREKIT 2 READY</span>
+                        </div>
+                        <div class="preview-content">
+                            <div class="metric-grid">
+                                <div class="metric-card">
+                                    <div class="metric-card-title">SPECIES IDENTIFIED</div>
+                                    <div class="metric-card-val accent-green">Erithacus rubecula (99.8%)</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">COREML INFERENCE</div>
+                                    <div class="metric-card-val accent-cyan">8.4 ms (On-Device)</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">STOREKIT 2 IAP TIERS</div>
+                                    <div class="metric-card-val accent-purple">Weekly / Annual / Lifetime</div>
+                                </div>
+                                <div class="metric-card">
+                                    <div class="metric-card-title">OFFLINE FALLBACK</div>
+                                    <div class="metric-card-val accent-orange">100% Reliable</div>
+                                </div>
+                            </div>
+                            <div class="preview-log">
+                                <div><span class="log-pass">[IDENTIFIED]</span> European Robin detected with high confidence.</div>
+                                <div><span class="log-info">[SYMPTOM CHECK]</span> Wing feathering intact; behavioral symptoms clear.</div>
+                                <div><span class="log-pass">[STOREKIT 2]</span> Transaction verified using Apple App Store Server API.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Engineering Projects Section -->
+    <section id="projects" class="projects-dark">
+        <div class="container">
+            <h2 class="section-title-dark">Other Engineering Projects</h2>
+            <p class="projects-subtitle">Simulation tools, enterprise telemetry dashboards, and hackathon prototypes.</p>
+            <div class="projects-grid-dark">
+
+                <!-- 1. LogAI Telemetry Platform -->
+                <a href="https://github.com/melogpt" target="_blank" class="pcard">
+                    <div class="pcard-badge">Enterprise Web</div>
+                    <h3 class="pcard-title">LogAI Telemetry Platform</h3>
+                    <p class="pcard-desc">Real-time analytical dashboards for ML-driven anomaly detection pipelines with ElasticSearch distributed queries.</p>
+                    <div class="pcard-tags"><span>React</span><span>TypeScript</span><span>ElasticSearch</span><span>State Management</span></div>
+                    <div class="pcard-footer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>Mastersoft Internship</span>
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/melike-demir-331827285/" target="_blank" rel="noopener noreferrer" class="contact-item linkedin">
-                    <div class="contact-icon"><i class='bx bxl-linkedin'></i></div>
-                    <div class="contact-detail">
-                        <span class="contact-type">LinkedIn</span>
-                        <span class="contact-text">linkedin.com/in/melikedemir</span>
+
+                <!-- 2. Simulation Reversible Transaction Engine -->
+                <a href="https://github.com/melogpt" target="_blank" class="pcard">
+                    <div class="pcard-badge">C++ Systems</div>
+                    <h3 class="pcard-title">Reversible Transaction Engine</h3>
+                    <p class="pcard-desc">Modern C++17 simulation engine utilizing the Command Pattern for multi-level undo/redo operations and session serialization.</p>
+                    <div class="pcard-tags"><span>C++17</span><span>STL</span><span>Command Pattern</span><span>Memory Profiling</span></div>
+                    <div class="pcard-footer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>Simtek Internship</span>
                     </div>
                 </a>
-                <a href="https://github.com/melogpt" target="_blank" rel="noopener noreferrer" class="contact-item git">
-                    <div class="contact-icon"><i class='bx bxl-github'></i></div>
-                    <div class="contact-detail">
-                        <span class="contact-type">GitHub</span>
-                        <span class="contact-text">github.com/melogpt</span>
+
+                <!-- 3. AI Language Coach Prototype -->
+                <a href="https://github.com/melogpt" target="_blank" class="pcard">
+                    <div class="pcard-badge">Hackathon 2025</div>
+                    <h3 class="pcard-title">AI Speaking Coach Prototype</h3>
+                    <p class="pcard-desc">AI-driven language learning mobile prototype featuring real-time speech interaction, built within the intensive Cursor Hackathon.</p>
+                    <div class="pcard-tags"><span>Swift</span><span>LLM Prompting</span><span>Speech API</span><span>Agile</span></div>
+                    <div class="pcard-footer">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <span>Cursor Hackathon</span>
                     </div>
                 </a>
-                <a href="https://instagram.com/immelikedmr" target="_blank" rel="noopener noreferrer" class="contact-item insta">
-                    <div class="contact-icon"><i class='bx bxl-instagram'></i></div>
-                    <div class="contact-detail">
-                        <span class="contact-type">Instagram</span>
-                        <span class="contact-text">@immelikedmr</span>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 — 2026</div>
+                        <h3 class="timeline-title">Çankaya University</h3>
+                        <p class="timeline-degree">B.Sc. in Software Engineering • Ankara, Turkey</p>
+                        <p class="timeline-desc">
+                            Comprehensive curriculum covering Software Architecture, Algorithms, Object-Oriented Systems, and Intelligent Software Engineering. Capstone graduation project developed in formal partnership with the TUSAŞ LIFT UP defense research program on Helicopter Cockpit Display Unit (HDU) test automation.
+                        </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community & Competitions -->
+    <section class="community-section">
+        <div class="container">
+            <h2 class="section-title-dark">Community & Competitions</h2>
+            <div class="community-grid">
+                
+                <div class="community-card">
+                    <div class="community-card-icon">🍎</div>
+                    <div class="community-stat">WWDC '26</div>
+                    <h3 class="community-title">Apple WWDC 2026 Attendee</h3>
+                    <p class="community-desc">Participated in worldwide Apple developer sessions covering Swift Concurrency, SwiftUI enhancements, StoreKit 2 architecture, and iOS 18 SDK capabilities.</p>
+                    <div class="community-badges"><span>Apple Developer</span><span>iOS 18 SDK</span></div>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-card-icon">✈️</div>
+                    <div class="community-stat">TUSAŞ</div>
+                    <h3 class="community-title">LIFT UP Mentorship</h3>
+                    <p class="community-desc">Selected participant in aerospace industry-academia R&D program, collaborating with flight test and software verification engineers.</p>
+                    <div class="community-badges"><span>Aerospace R&D</span><span>Avionics QA</span></div>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-card-icon">⚡</div>
+                    <div class="community-stat">2025</div>
+                    <h3 class="community-title">Cursor Hackathon Turkey</h3>
+                    <p class="community-desc">Architected and demonstrated an AI-driven language learning mobile application prototype within an intensive agile hackathon setting.</p>
+                    <div class="community-badges"><span>Cursor IDE</span><span>AI Prototype</span></div>
+                </div>
+
+                <div class="community-card">
+                    <div class="community-card-icon">🚀</div>
+                    <div class="community-stat">Active</div>
+                    <h3 class="community-title">University Tech Communities</h3>
+                    <p class="community-desc">Active contributing member of IEEE Computer Society and Google Developer Student Clubs (GDSC) at Çankaya University.</p>
+                    <div class="community-badges"><span>IEEE CS</span><span>GDSC</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Languages -->
+    <section class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-item">
+                    <span class="cert-org">TUSAŞ LIFT UP</span>
+                    <span class="cert-name">19th R&D Project Market (19. Ar-Ge Proje Pazarı): Acceptance & Exhibition for HDU Test Automation</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-org">IEEE CS</span>
+                    <span class="cert-name">Geleceği Kodluyoruz: IEEE Computer Society / LST Software Development Track</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-org">Meta</span>
+                    <span class="cert-name">Introduction to Front-End Development Specialization</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-org">Turkcell</span>
+                    <span class="cert-name">Geleceği Yazanlar: Swift ile iOS Programlama Başarı Sertifikası</span>
+                </div>
+            </div>
+
+            <!-- Languages Box -->
+            <div class="languages-box">
+                <span class="lang-title">🌐 Languages</span>
+                <div class="lang-items">
+                    <div class="lang-item"><strong>Turkish</strong> (Native)</div>
+                    <div class="lang-item"><strong>English</strong> (Professional Working Proficiency)</div>
+                    <div class="lang-item"><strong>German</strong> (Beginner)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Download -->
+    <section class="cv-section-new">
+        <div class="container">
+            <div class="cv-banner">
+                <div class="cv-banner-text">
+                    <h2>Want the full picture?</h2>
+                    <p>Download my CV for a complete overview of my experience, aerospace research, and technical skills.</p>
+                </div>
+                <a href="melike-demir-cv.pdf" class="cv-download-btn-new" download="Melike_Demir_CV.pdf">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Download CV</span>
                 </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <p>© 2026 Melike Demir. All rights reserved.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-dark">
+        <div class="container">
+            <h2 class="section-title-dark">Get in Touch</h2>
+            <p class="contact-subtitle">Whether you have a software engineering opportunity, an aerospace QA / computer vision project, or an iOS collaboration, I'm always open to connecting.</p>
+            <div class="contact-grid-dark">
+                
+                <a href="mailto:melikedilekdemir@gmail.com" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span>Email</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/melike-demir-331827285/" target="_blank" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/melogpt" target="_blank" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016.02 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="tel:+905425105952" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    <span>Phone</span>
+                </a>
+
+                <a href="https://instagram.com/immelikedmr" target="_blank" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Instagram</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-dark">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">MD.</span>
+                <p class="footer-copy">© 2026 Melike Demir. Built with modern engineering mindset, shipped with passion.</p>
+            </div>
+        </div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
