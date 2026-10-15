@@ -228,10 +228,11 @@ body {
 
 .hero-stats {
     display: flex;
-    gap: 36px;
+    gap: 32px;
     margin-bottom: 40px;
     padding-top: 28px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
+    flex-wrap: wrap;
 }
 
 .hero-stat {
@@ -241,10 +242,11 @@ body {
 }
 
 .stat-number {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 800;
     color: #ffffff;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
 }
 
 .stat-label {
